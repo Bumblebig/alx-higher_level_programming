@@ -12,4 +12,5 @@ def print_sorted_dictionary(a_dictionary):
         new_dic[item] = a_dictionary[item]
 
     a_dictionary = new_dic
-    return a_dictionary
+     for k, v in a_dictionary.values():
+         print(f"{k}: {v}")
