@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
     best_key = 0
+    keyVal = ''
     message = "Best score: "
     if a_dictionary:
-        for val in a_dictionary.values():
+        for key, val in a_dictionary.keys():
             if val > best_key:
                 best_key = val
-        print(f"{message}{best_key}")
+                keyVal = key
+        print(f"{message}{keyVal}")
     else:
         print(f"{message}{None}")
