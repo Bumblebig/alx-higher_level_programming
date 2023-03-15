@@ -4,7 +4,7 @@ def best_score(a_dictionary):
     keyVal = ''
     message = "Best score: "
     if a_dictionary:
-        for key, val in a_dictionary.keys():
+        for key, val in a_dictionary.items():
             if val > best_key:
                 best_key = val
                 keyVal = key
