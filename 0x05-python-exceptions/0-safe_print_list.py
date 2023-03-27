@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    i = 0
-    try:
-        for num in range(x):
-            print(f"{my_list[i]} \n")
-            i += 1
-    except (ValueError, TypeError, IndexError):
-        pass
+    count = 0
+    for i in range(0, x):
+        try:
+            print("{}".format(my_list[i]), end="")
+            count += 1
+        except (ValueError, TypeError, IndexError):
+            break
+    print()
+    return count
