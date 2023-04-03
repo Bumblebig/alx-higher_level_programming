@@ -1,3 +1,45 @@
+#!/usr/bin/python3
+"""Define a class Rectangle"""
+
+
+class Rectangle:
+    """ Class that defines a rectangle """
+
+    def __init__(self, width=0, height=0):
+        """ initializes the object """
+        self.__width = width
+        self.__height = height
+
+    @property
+    def width(self):
+        """ returns the value of the width """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """ defines the width """
+        if not type(value) is int:
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
+
+    @property
+    def height(self):
+        """ returns the value of the height """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """ defines the height """
+        if not type(value) is int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
+
+    def area(self):
+        """ returns the area of the rectangle """
         return self.width * self.height
 
     def perimeter(self):
@@ -24,3 +66,4 @@
     def __del__(self):
         """prints a message when an instance is deleted"""
         print("Bye rectangle...")
+
