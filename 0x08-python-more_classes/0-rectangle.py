@@ -1,3 +1,6 @@
 #!/usr/bin/python3
+'''Defining an empty Rectangle class'''
+
 class Rectangle:
-    def __init__ (self):
+    """ Empty class """
+    pass
