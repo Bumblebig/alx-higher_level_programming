@@ -21,4 +21,5 @@ def print_square(size):
         for el in range(0, size):
             str += "#"
         print(str)
+        str = ""
 
