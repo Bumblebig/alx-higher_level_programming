@@ -1,0 +1,22 @@
+'''
+# Import function
+>>> from importlib import import_module
+>>> say_my_name = import_module('3-say_my_name').say_my_name
+
+# correct arguments
+>>> say_my_name("Donquixote", "Doflamingo")
+My name is Donquixote Doflamingo
+
+# Incorrect arguments
+>>> try:
+...     say_my_name("Donquixote", 2)
+... except TypeError as e:
+...     print(e.args[0])
+last_name must be a string
+>>> try:
+...     say_my_name(2.2, "Doflamingo")
+... except TypeError as e:
+...     print(e.args[0])
+first_name must be a string
+
+'''
