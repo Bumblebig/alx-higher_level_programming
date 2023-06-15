@@ -1,1 +1,4 @@
-# Learning Python on ALX
+# Learning high level languages on ALX
+- Python
+- SQL
+- javaScript
